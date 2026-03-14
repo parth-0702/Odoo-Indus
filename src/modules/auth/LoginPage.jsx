@@ -25,10 +25,9 @@ export default function LoginPage() {
     <div className="auth-wrapper">
       <div className="auth-card">
         <div className="auth-logo">
-          <div className="auth-logo-icon">📦</div>
-          <div>
-            <div style={{ fontWeight: 800, fontSize: 18 }}>CoreInventory</div>
-            <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>ENTERPRISE ERP</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <img src="/waresync-logo.png" alt="WareSync Logo" style={{ height: 32 }} />
+            <div style={{ fontWeight: 800, fontSize: 20, color: 'var(--primary)' }}>WareSync</div>
           </div>
         </div>
         <h2 className="auth-title">Welcome back</h2>

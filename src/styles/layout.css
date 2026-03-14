@@ -56,8 +56,10 @@
   font-weight: 800;
   font-size: 15px;
   letter-spacing: -0.3px;
-  background: linear-gradient(135deg, var(--primary-light), #a78bfa);
+  /* WareSync brand gradient matching the uploaded logo */
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }

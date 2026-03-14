@@ -25,14 +25,13 @@ export default function SignupPage() {
     <div className="auth-wrapper">
       <div className="auth-card">
         <div className="auth-logo">
-          <div className="auth-logo-icon">📦</div>
-          <div>
-            <div style={{ fontWeight: 800, fontSize: 18 }}>CoreInventory</div>
-            <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>ENTERPRISE ERP</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <img src="/waresync-logo.png" alt="WareSync Logo" style={{ height: 32 }} />
+            <div style={{ fontWeight: 800, fontSize: 20, color: 'var(--primary)' }}>WareSync</div>
           </div>
         </div>
         <h2 className="auth-title">Create account</h2>
-        <p className="auth-subtitle">Join your team on CoreInventory</p>
+        <p className="auth-subtitle">Join your team on WareSync</p>
 
         {error && (
           <div style={{ background: 'var(--danger-bg)', color: 'var(--danger)', padding: '10px 14px', borderRadius: 'var(--radius-md)', fontSize: 13, marginBottom: 12 }}>

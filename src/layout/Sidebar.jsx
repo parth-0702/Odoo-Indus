@@ -36,8 +36,8 @@ export default function Sidebar() {
     <aside className={`sidebar ${collapsed ? 'sidebar-collapsed' : ''}`}>
       {/* Logo */}
       <div className="sidebar-logo">
-        <div className="sidebar-logo-icon">📦</div>
-        {!collapsed && <span className="sidebar-logo-text">CoreInventory</span>}
+        <img src="/waresync-logo.png" alt="Logo" style={{ height: 24, width: 24, objectFit: 'contain' }} />
+        {!collapsed && <span className="sidebar-logo-text" style={{ fontSize: 18 }}>WareSync</span>}
       </div>
 
       {/* Toggle button */}
