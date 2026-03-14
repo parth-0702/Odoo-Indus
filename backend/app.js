@@ -17,12 +17,26 @@ const dashboardRoutes = require('./modules/dashboard/dashboard.routes');
 const app = express();
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+const allowedOrigins = [
+  'http://localhost:5173',
+  process.env.FRONTEND_URL || 'https://waresync-frontend.vercel.app' 
+];
+
+app.use(cors({ 
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true 
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Health check
-app.get('/api/health', (req, res) => res.json({ status: 'OK', message: 'CoreInventory API is running' }));
+app.get('/api/health', (req, res) => res.json({ status: 'OK', message: 'CoreInventory API is running on Render' }));
 
 // API Routes
 app.use('/api/auth', authRoutes);
