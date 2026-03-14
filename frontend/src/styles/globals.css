@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* Color Palette */
-  --primary: #4f46e5;
-  --primary-light: #6366f1;
-  --primary-dark: #3730a3;
-  --primary-bg: #eef2ff;
+  /* WareSync Teal Brand Palette */
+  --primary: #0e8fa5;
+  --primary-light: #15aabf;
+  --primary-dark: #0a6e80;
+  --primary-bg: #e0f5f8;
 
   --success: #10b981;
   --success-bg: #d1fae5;
@@ -13,27 +13,27 @@
   --warning-bg: #fef3c7;
   --danger: #ef4444;
   --danger-bg: #fee2e2;
-  --info: #3b82f6;
-  --info-bg: #dbeafe;
+  --info: #0891b2;
+  --info-bg: #cffafe;
 
-  --bg-primary: #0f0e17;
-  --bg-secondary: #1a1928;
-  --bg-card: #1e1d2e;
-  --bg-card-hover: #252436;
-  --bg-sidebar: #13121f;
-  --bg-input: #252436;
+  --bg-primary: #0b1419;
+  --bg-secondary: #0f1e24;
+  --bg-card: #132028;
+  --bg-card-hover: #1a2a33;
+  --bg-sidebar: #0b1822;
+  --bg-input: #1a2a33;
 
-  --text-primary: #f0eeff;
-  --text-secondary: #a09db8;
-  --text-muted: #6b6880;
+  --text-primary: #e8f6f9;
+  --text-secondary: #8ab4bc;
+  --text-muted: #537078;
 
-  --border: #2e2c42;
-  --border-light: #3a3852;
+  --border: #1e3540;
+  --border-light: #2a4555;
 
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
-  --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.15);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.6);
+  --shadow-glow: 0 0 24px rgba(14, 143, 165, 0.2);
 
   --radius-sm: 6px;
   --radius-md: 10px;
