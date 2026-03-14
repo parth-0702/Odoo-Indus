@@ -19,7 +19,8 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   'http://localhost:5173',
-  process.env.FRONTEND_URL || 'https://waresync-frontend.vercel.app' 
+  process.env.FRONTEND_URL || 'https://ware-sync.vercel.app',
+  'https://waresync-frontend.vercel.app'
 ];
 
 app.use(cors({ 
